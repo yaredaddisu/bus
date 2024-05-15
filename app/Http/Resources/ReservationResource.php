@@ -29,6 +29,7 @@ class ReservationResource extends JsonResource
             'route' => $this->route,
             'price' => $this->price,
             'reference' => $this->reference,
+            'paymentStatus' => $this->paymentStatus,
 
             'firstName' => $this->firstName,
             'lastName' => $this->lastName,
