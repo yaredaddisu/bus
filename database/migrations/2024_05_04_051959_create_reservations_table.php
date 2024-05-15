@@ -33,7 +33,7 @@ class CreateReservationsTable extends Migration
             $table->date('bookingDate');
             $table->date('journeyDate');
             $table->enum('status', ['booked', 'canceled']);
-            $table->enum('paymentStatus')->default(1);
+            $table->enum('paymentStatus', ['pending', 'completed'])->default('pending');
             $table->timestamps();
         });
     }
